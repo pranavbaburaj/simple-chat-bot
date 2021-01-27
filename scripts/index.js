@@ -3,7 +3,11 @@ import {getCurrentTheme, storeTheme} from "./theme.js"
 
 const startSpeaking = document.querySelector(".s")
 
-startSpeaking.addEventListener('touchstart click', function(event) {
+startSpeaking.addEventListener('click', function(event) {
+    recognition.start()
+})
+
+startSpeaking.addEventListener('touchstart', function(event) {
     recognition.start()
 })
 
