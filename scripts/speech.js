@@ -1,4 +1,5 @@
 import {fillInputBox} from "./index.js"
+import createTextEvaluator from "./text.js"
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
@@ -14,9 +15,10 @@ recognition.addEventListener('result', (e) => {
     fillInputBox(".user-input", text)
 
     //speak out
-    var speaker = new Speaker(text)
-    speaker.speak()
+    // var speaker = new Speaker(text)
+    // speaker.speak()
     // console.log(d)
+    createTextEvaluator(text)
   });
 
 // Speaker
