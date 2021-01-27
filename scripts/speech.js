@@ -1,3 +1,5 @@
+import {fillInputBox} from "./index.js"
+
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 // the speech recognizer
@@ -9,7 +11,28 @@ recognition.addEventListener('result', (e) => {
     // let last = e.results.length - 1;
     let text = e.results[0][0].transcript;
     // text is the speech
+    fillInputBox(".user-input", text)
+
+    //speak out
+    var speaker = new Speaker(text)
+    speaker.speak()
+    // console.log(d)
   });
+
+// Speaker
+export class Speaker {
+  constructor(textToUtter){
+    this.utterText = textToUtter
+  }
+
+  speak(){
+    const utterance = new SpeechSynthesisUtterance(this.utterText)
+    // utterance.volume = 5
+    speechSynthesis.speak(utterance)
+
+    return utterance
+  }
+}
 
 // speaking
 // let utterance = new SpeechSynthesisUtterance("Hello world!");

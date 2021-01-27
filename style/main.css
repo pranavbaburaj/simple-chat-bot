@@ -33,6 +33,8 @@ body {
     outline: 0;
     border : 3px solid var(--text);
     background-color: var(--hard);
+    color : #ffffff;
+    font-weight: 700;
 } 
 
 .go {
