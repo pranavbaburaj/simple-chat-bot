@@ -11,6 +11,7 @@ import createTextEvaluator, {TextEvaluator} from "./text.js"
 // the mic button
 const startSpeaking = document.querySelector(".s")
 
+
 // the go button
 // for people using the keyborad for typing in
 // instead of using the mic
@@ -30,6 +31,7 @@ export function addBotMessage(messageToAdd, listItem){
     listItemNode.appendChild(listTextNode)
     listItem.appendChild(listItemNode)
 }
+
 
 // the enter key event
 // listener for user text input

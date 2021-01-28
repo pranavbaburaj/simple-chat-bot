@@ -7,12 +7,13 @@ export function getMessageTemplate(message){
         <p>${message}</p>
     </div>
     `
-}
+} 
 
 function askUserName(){
     var speaker = new Speaker("I would love to know your name?").speak()
     return window.prompt("I would love to know your name?")
 }
+
 
 export function addMessage(message){
     messageList.innerHTML = getMessageTemplate(message)

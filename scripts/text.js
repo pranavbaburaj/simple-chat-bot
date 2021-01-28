@@ -2,6 +2,8 @@
 import {Speaker} from "./speech.js"
 import {addMessage} from "./message.js"
 
+import LexicalAnalyser from "./lexer.js"
+
 // Create a new text evaluator
 /**
  * 
@@ -29,6 +31,8 @@ export class TextEvaluator{
     }
 
     getResult() {
+        var tokens = new LexicalAnalyser(this.userInput).startUserDataParsing()
+        console.log(tokens)
         return this.userInput
     }
 
