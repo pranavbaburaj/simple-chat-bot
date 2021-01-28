@@ -21,7 +21,7 @@ export function addMessage(message){
 export function setUserName(){
     const user = localStorage.getItem('user')
 
-    if(user == "null"){
+    if(user == "null" || user == null){
         const newUserName = askUserName()
         localStorage.setItem('user', newUserName)
         return newUserName
