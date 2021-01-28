@@ -1,3 +1,5 @@
-# simple-chat-bot
-A very simple chat bot (non AI) 
-## Application is under construction
+# Simple-virtual-assistant
+
+This is a simple virtual assistant 
+
+# How to set it up ?

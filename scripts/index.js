@@ -21,9 +21,17 @@ const submitVoiceInput = document.querySelector('.go')
 // the main user input box
 export const inputTextBox = document.querySelector('.user-input')
 
+// const fillLastUserInput = (inputBox) => {
+//     const lastUserInput = localStorage.getItem('last-user-input')
+//     console.log(`data = ${lastUserInput}`)
+// }
+
+// fillLastUserInput(inputTextBox)
+
 // messages
 export const messageList = document.querySelector('.messages')
 
+// add a new bot message
 export function addBotMessage(messageToAdd, listItem){
     // create a list elemeny
     var listItemNode = document.createElement('li')
@@ -77,7 +85,7 @@ submitVoiceInput.addEventListener('touchstart', function(event) {
 export function fillInputBox(inputSelector, fillText){
     const inputBox = document.querySelector(inputSelector)
     inputBox.value = fillText
-    localStorage.setItem('last-user-input', fillText)
+    localStorage.setItem('last-user-input',"")
 }
 
 // set the styles
