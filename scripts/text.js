@@ -1,5 +1,6 @@
 // import {inputTextBox} from "./index.js"
 import {Speaker} from "./speech.js"
+import {addMessage} from "./message.js"
 
 // Create a new text evaluator
 /**
@@ -42,6 +43,7 @@ export class TextEvaluator{
     startReply(){
         var speaker = new Speaker(this.result)
         speaker.speak()
+        addMessage(this.result)
         console.log(speaker)
     }
 }

@@ -18,6 +18,26 @@ const submitVoiceInput = document.querySelector('.go')
 // the main user input box
 export const inputTextBox = document.querySelector('.user-input')
 
+// messages
+export const messageList = document.querySelector('.messages')
+
+export function addBotMessage(messageToAdd, listItem){
+    // create a list elemeny
+    var listItemNode = document.createElement('li')
+    var listTextNode = document.createTextNode(messageToAdd.toString())
+    listItemNode.appendChild(listTextNode)
+    listItem.appendChild(listItemNode)
+}
+
+// the enter key event
+// listener for user text input
+// box
+inputTextBox.addEventListener('keydown', function(event) {
+    if(event.keyCode == 13){
+        createTextEvaluator(inputTextBox.value)
+        TextEvaluator.clearInputBox(inputTextBox)
+    }
+})
 
 // event listeners
 // button clicks for computers and touchscreen devices

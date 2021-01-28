@@ -71,3 +71,26 @@ body {
     border : none;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
+
+
+.helloworld {
+    border: none;
+    background-color: #36393F;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 10px 10px 10px;
+    color: var(--text);
+    /* opacity: ; */
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+  }
+
+  
+  /* Clear floats */
+  .helloworld::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+
