@@ -1,5 +1,7 @@
 import {recognition, Speaker} from "./speech.js"
 import {getCurrentTheme, storeTheme} from "./theme.js"
+import {setUserName} from "./message.js"
+
 
 // the text evaluation that determines what to tell
 // back to the user
@@ -84,5 +86,13 @@ const setAllStyles = (themeData) => {
 
 var currentTheme = getCurrentTheme()
 
+const wishUser = (userName) => {
+    const wishString = `Hello, ${userName}`
+    createTextEvaluator(wishString)
+    TextEvaluator.clearInputBox(inputTextBox)
+}
+
+wishUser(setUserName())
+// console.log(localStorage.getItem('user'))
 setAllStyles(currentTheme)
 
