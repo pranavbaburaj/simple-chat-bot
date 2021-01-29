@@ -1,11 +1,10 @@
+import {inputTextBox} from "./index.js"
+
 export function whatIsYourName(){
     return `My Name is lol`
 }
 
-export function searchOnGoogle(data){
-    window.open(
-        "https://github.com/",
-        "DescriptiveWindowName",
-        "resizable,scrollbars,status"
-    )
+export function searchFor(data){
+    data = inputTextBox.value.toString().replace(" ", "+")
+    return `https://duckduckgo.com/?q=${data}`
 }

@@ -1,4 +1,6 @@
 import * as statement from "./statements.js"
+import {inputTextBox} from "./index.js"
+
 
 export default class Parser {
     constructor(dataToParse) {
@@ -23,8 +25,15 @@ export default class Parser {
     parser(){
         if(this.array.includes("your") && this.array.includes("name")){
             return statement.whatIsYourName()
-        } 
+        } else if(this.array.includes("hello,")){
+            return "Hai"
+        }
 
-        return "Sorry, I did'nt get you"
+        window.open(
+            statement.searchFor(),
+            "DescriptiveWindowName",
+            "resizable,scrollbars,status"
+        )
+        return inputTextBox.value
     }
 }
