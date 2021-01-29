@@ -3,5 +3,6 @@ export default function getAllTokens() {
         greetings : ["hai", "hello", "hey", "hi"],
         question : ["what", "do"],
         request : ["please"],
+        identites : ["name", "age", "place", 'friend', "wife", "husband", "job"],
     }
 }

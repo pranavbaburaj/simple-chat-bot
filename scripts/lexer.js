@@ -28,6 +28,7 @@ function reduceToThree(dictList){
             list.push(dictList[i])
         }
     }
+
     return list
 }
 
@@ -47,6 +48,7 @@ export default class LexicalAnalyser {
         this.pos = 0
         this.curr = getCurrentCharacter(data, this.pos)
         this.tokens = new Array()
+
     }
 
     getElement(tokensKeyList, i, currentList){

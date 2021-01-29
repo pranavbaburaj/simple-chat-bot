@@ -3,6 +3,7 @@ import {Speaker} from "./speech.js"
 import {addMessage} from "./message.js"
 
 import LexicalAnalyser from "./lexer.js"
+import Parser from "./parser.js"
 
 // Create a new text evaluator
 /**
@@ -32,12 +33,13 @@ export class TextEvaluator{
 
     getResult() {
         var tokens = new LexicalAnalyser(this.userInput).startUserDataParsing()
-        console.log(tokens)
-        return this.userInput
+        var parser = new Parser(tokens)
+
+        return parser.parser()
     }
 
     // clear the input box after
-    // a timout
+    // a timeout
     static clearInputBox(textInput){
         setTimeout(function() {
             textInput.value = ""
