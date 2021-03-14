@@ -1,5 +1,5 @@
-# Simple-virtual-assistant
-#### A simple virtual assistant (under contruction)
+# duckduckgo-voice-search(This project is under an archived state)
+#### A simple virtual assistant (This project is under an archived state)
 ![enter image description here](https://raw.githubusercontent.com/pranavbaburaj/simple-virtual-assistant/master/logo/demo.png)
 ##### Try it out [here](simple-chat-bot.netlify.app/)
 ## How to set it up ?
