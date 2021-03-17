@@ -1,4 +1,7 @@
 # duckduckgo-voice-search(This project is under an archived state)
+
+>A very simple duckduckgo voice search for people you are lazy to use their keyboard. Just use your voice to search duckduckgo
+
 #### A simple virtual assistant (This project is under an archived state)
 ![enter image description here](https://raw.githubusercontent.com/pranavbaburaj/duckduckgo-voice-search/master/screely-1615789099406.png)
 ##### Try it out [here](simple-chat-bot.netlify.app/)
